@@ -34,3 +34,7 @@ marta = {
 for key, value in marta.items():
     print(key)
     print(value)
+
+# Good. But output should be like:
+# for key, value in marta.items():
+#     print(f"{key} => {value}")

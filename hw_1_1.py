@@ -13,4 +13,4 @@ print(f"Marta's salary is: {marta_salary}$ per hour")
 
 
 
-
+# Good but too much new lines after code
