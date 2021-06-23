@@ -4,3 +4,5 @@
 """
 list_with_duplicate_names = ["Chuck", "Ozzy", "Chuck", "Robin", "Batman", "Batman", "Batman"]
 list_with_names = list(set(list_with_duplicate_names))
+
+# Good. No prints should be there.

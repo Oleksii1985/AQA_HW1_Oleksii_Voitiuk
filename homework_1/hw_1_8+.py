@@ -58,3 +58,5 @@ marta = {
 for key, value in marta.items():
     print(key)
     print(value)
+
+# Good. But some of them maybe does not have friends.
