@@ -6,11 +6,3 @@ john_salary = 5.2
 marta_salary = 4.9
 print(f"John's salary is: {john_salary}$ per hour")
 print(f"Marta's salary is: {marta_salary}$ per hour")
-
-
-
-
-
-
-
-
