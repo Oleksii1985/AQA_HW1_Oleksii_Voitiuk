@@ -6,3 +6,5 @@
 normal_people = ["Anna Smith", "John Snow", "Bob Mann", "Lisa Well"]
 vegetarian_people = ["Phil Lane", "Lisa Bum", "Eric Dow", "Melanie C"]
 total_people = normal_people + vegetarian_people
+
+# Good

@@ -6,3 +6,5 @@ bigno_blacklist = ["Anna Smith", "John Snow", "Bob Mann"]
 poker_blacklist = ["John Snow", "Phil Lane", "Lisa Bum"]
 majong_blacklist = ["Eric Dow", "Melanie C", "John Snow"]
 same_people = set(bigno_blacklist).intersection(poker_blacklist, majong_blacklist)
+
+# Good
