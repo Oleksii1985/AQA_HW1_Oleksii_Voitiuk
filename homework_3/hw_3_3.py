@@ -4,8 +4,10 @@
 имен врагов. И вывести сообщение f"{friend} we are not the friends anymore" если друг оказался в списке врагов.
 Если имя друга James не проверяем его ибо он лучшый друг.
 """
+
 friends = ["John", "Marta", "James"]
 enamies = ["John", "Johnatan", "Artur"]
+
 for friend in friends:
     if friend not in enamies and friend != "James":
         print(f"{friend} we are the best friends")
