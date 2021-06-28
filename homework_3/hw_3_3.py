@@ -13,3 +13,12 @@ for friend in friends:
         print(f"{friend} we are the best friends")
     elif friend in enamies:
         print(f"{friend} we are not the friends anymore")
+
+# Good alternative solution was something like this
+# for friend in friends:
+#     if friend == "James":
+#         continue
+#     elif friend in enemies:
+#         print(f"{friend} we are not the friends anymore")
+#     else:
+#         print(f"{friend} we are the best friends")
