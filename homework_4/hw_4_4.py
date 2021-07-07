@@ -7,3 +7,6 @@ some_list = ["FirstItem", "FriendsList", "MyTuple"]
 new_list = []
 for str_ in some_list:
     new_list.append(re.sub('(?!^)([A-Z]+)', r'_\1', str_).lower())
+
+# Nice solution from StackOverflow
+# Please describe how does it work in activity diagram or in words

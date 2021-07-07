@@ -4,7 +4,13 @@
 Преобразовать эту строку в словарь где ключем должно быть значение перед = а значение пары
 значение после равно {name: Amanda......}
 """
-some_string = "     name=Amanda=sssss&age=32&&salary=1500&currency=quro                             "
-new_string = some_string.strip()
-pairs = new_string.split("=")
-dict(zip(pairs[::2], pairs[1::2]))
+if __name__ == '__main__':
+
+    some_string = "     name=Amanda=sssss&age=32&&salary=1500&currency=quro                             "
+    new_string = some_string.strip()
+    pairs = new_string.split("=")
+    print(dict(zip(pairs[::2], pairs[1::2])))
+
+# Almost right but take a look on output:
+# {'name': 'Amanda', 'sssss&age': '32&&salary', '1500&currency': 'quro'} Actual
+# {'name': 'Amanda=sssss', 'age': '32', 'salary': '1500', 'currency': 'quro'} Expected

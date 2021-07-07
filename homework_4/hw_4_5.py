@@ -14,3 +14,6 @@ text = re.sub(r'\s+', ' ', text, flags=re.M)
 for _, sent in enumerate(re.split(r'(?<=[.!?…])\s+', text), 1):
     sent = sent.replace('\n', ' ')
     print(f"{sent}")
+
+# Interesting solution.
+# describe please how does it works step by step: (?<=[.!?…])
