@@ -12,3 +12,6 @@ for name in some_list:
 # Good but you have done task using rjust method.
 # Take a look on code examples for lesson 4 and try to make it using f string
 # syntax without rjust
+
+# for name in some_list:
+#     print(f"{name:>20}")

@@ -10,10 +10,13 @@ text = """Многие думают, что Lorem Ipsum - взятый с пот
 ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен 
 в эпоху Возрождения.
 Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32!"""
-text = re.sub(r'\s+', ' ', text, flags=re.M)
-for _, sent in enumerate(re.split(r'(?<=[.!?…])\s+', text), 1):
-    sent = sent.replace('\n', ' ')
-    print(f"{sent}")
+# text = re.sub(r'\s+', ' ', text, flags=re.M)
+# for _, sent in enumerate(re.split(r'(?<=[.!?…])\s+', text), 1):
+#     sent = sent.replace('\n', ' ')
+#     print(f"{sent}")
 
 # Interesting solution.
 # describe please how does it works step by step: (?<=[.!?…])
+
+# Alternative solution with regular expression
+# print(re.findall(r"[А-Я].*?[.!?](?=\s|$)", text))

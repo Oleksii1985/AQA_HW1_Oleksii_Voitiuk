@@ -14,3 +14,13 @@ if __name__ == '__main__':
 # Almost right but take a look on output:
 # {'name': 'Amanda', 'sssss&age': '32&&salary', '1500&currency': 'quro'} Actual
 # {'name': 'Amanda=sssss', 'age': '32', 'salary': '1500', 'currency': 'quro'} Expected
+
+# Alternative solution
+# result = dict()
+#
+# for pair in some_string.strip().split('&'):
+#     if pair:
+#         key, value = pair.split('=', maxsplit=1)
+#         result[key] = value
+#
+# print(result)
