@@ -13,3 +13,11 @@ for operation in operations:
         print(f"Tuple is: {operation} result is: {left_operand} - {right_operand} = {left_operand - right_operand}")
     else:
         print(f"Tuple is: {operation} result is: {left_operand} * {right_operand} = {left_operand * right_operand}")
+
+    # like aalternative you can use something like this if you need debug operations only
+    # if operator == 1:
+    #     print(f"{left_operand + right_operand = }")
+    # elif operator == 2:
+    #     print(f"{left_operand - right_operand = }")
+    # else:
+    #     print(f"{left_operand * right_operand = }")
