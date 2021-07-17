@@ -5,19 +5,15 @@
 строками в качестве элементов последовательностей. В качестве последовательностей могут быть переданы списки,
 кортэжи, словари. Буду проверять с помощью майпай аннотации.
 """
-from typing import Union, Callable
-list_1 = [10, 15, 25, 40, 10]
+from typing import Union, Callable, Dict, List, Tuple
 
 
-def my_reduce(callback: Callable, *sequences: Union[dict, list, tuple]) -> Union[int, float, str]:
-    return callback(sequences)
-
-
-def add(a, b):
-    return a + b
-
-
-a = list_1
-for i in range(1, len(list_1)):
-    b = list_1[i]
-    a = add(a, b)
+def my_reduce(callback: Callable, sequences: Union[Dict, List, Tuple], initializer=None):
+    it = iter(sequences)
+    if initializer is None:
+        value = next(it)
+    else:
+        value = initializer
+    for element in it:
+        value = callback(value, element)
+    return value
