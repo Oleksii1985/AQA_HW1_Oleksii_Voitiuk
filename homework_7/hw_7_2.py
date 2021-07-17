@@ -5,13 +5,11 @@
 строками в качестве элементов последовательностей. В качестве последовательностей могут быть переданы списки,
 кортэжи, словари. Буду проверять с помощью майпай аннотации.
 """
-from typing import Union, Callable
+from typing import Union, Callable, Dict, List, Tuple
 
 
-def my_map(callback: Callable, *sequences: Union[dict, list, tuple]) -> Union[int, float, str]:
+def my_map(callback: Callable, sequences: Union[Dict, List, Tuple]):
     res = []
-    if len(sequences) > 0:
-        min_l = min(len(sub_seq) for sub_seq in sequences)
-        for elem in range(min_l):
-            res.append(callback(*[sub_seq[elem] for sub_seq in sequences]))
-    return callback(res)
+    for elem in sequences:
+        res.append(callback(elem))
+    return res
