@@ -5,13 +5,11 @@
 строками в качестве элементов последовательностей. В качестве последовательностей могут быть переданы списки,
 кортэжи, словари. Буду проверять с помощью майпай аннотации.
 """
-from typing import Union, Callable
+from typing import Union, Callable, Tuple, List, Dict
 
 
-def my_filter(callback: Callable, *sequence: Union[dict, list, tuple]) -> Union[int, float, str]:
-    res = []
-    for elem in sequence:
-        for num in elem:
-            if callable(num):
-                res.append(num)
-    return callback(res)
+def my_filter(callback: Callable, sequence: Union[Tuple, List, Dict]):
+    result = []
+    for item in sequence:
+        result.append(item) if callback(item) else None
+    return result
