@@ -17,3 +17,9 @@ def my_reduce(callback: Callable, sequences: Union[Dict, List, Tuple], initializ
     for element in it:
         value = callback(value, element)
     return value
+
+
+print(my_reduce(lambda a, b: a + b, [1, 2, 3, 4, 5]))
+print(my_reduce(lambda a, b: a if a > b else b, [1, 2, 3, 4, 5]))
+print(my_reduce(lambda a, b: a if a < b else b, [1, 2, 3, 4, 5]))
+print(my_reduce(lambda a, b: a + b, ["One", "Two"]))

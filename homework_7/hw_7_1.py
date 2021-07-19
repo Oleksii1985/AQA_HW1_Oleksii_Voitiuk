@@ -13,3 +13,17 @@ def my_filter(callback: Callable, sequence: Union[Tuple, List, Dict]):
     for item in sequence:
         result.append(item) if callback(item) else None
     return result
+
+
+john = {"name": "John", "age": 23, "gender": "Male"}
+james = {"name": "James", "age": 12, "gender": "Male"}
+marta = {"name": "Marta", "age": 56, "gender": "Female"}
+
+print(my_filter(lambda n: n > 5, [1, 4, 56, 7, 87]))
+print(my_filter(lambda n: n.startswith('J'), ["James", "Marta", "John"]))
+print(
+    my_filter(
+        lambda man: man["name"].startswith('J'),
+        [john, james, marta]
+    )
+)
