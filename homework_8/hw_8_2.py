@@ -11,6 +11,11 @@ def square_is_even():
 
 # Well it is also will wor;k but there is no need to use generator
 # comprehension inside function. Use of comprehension or generator function
-# instead
+# instead. this function will return only 0 and will end so it does not work.
 
-# -2 points
+# -5 points
+# print(square_is_even())
+
+# 0
+#
+# Process finished with exit code 0
