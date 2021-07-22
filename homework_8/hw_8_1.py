@@ -21,3 +21,17 @@ def addition(a, b):
 @my_decorator
 def multiply(a, b):
     return a * b
+
+
+if __name__ == '__main__':
+    print(multiply(5, 5))
+    print(addition(5, 5))
+
+# Well nice but decorator brake logic of function. Since main purpose of
+# function is arithmetic operation and getting result which should be returned.
+# name of function is: multiply
+# None
+# name of function is: addition
+# None
+
+# -3 points
