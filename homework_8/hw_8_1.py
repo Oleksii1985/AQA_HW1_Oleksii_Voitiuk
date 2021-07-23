@@ -9,7 +9,7 @@
 def my_decorator(func):
     def inner(a, b):
         print(f"name of function is: {func.__name__}")
-        func(a, b)
+        return func(a, b)
     return inner
 
 
