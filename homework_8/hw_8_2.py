@@ -6,5 +6,4 @@
 
 def square_is_even():
     result = (item ** 2 for item in range(0, 1000000001) if item % 2 == 0)
-    for item in result:
-        return item
+    return result
