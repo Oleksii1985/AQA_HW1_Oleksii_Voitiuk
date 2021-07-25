@@ -23,9 +23,6 @@ def folder_walk(folder_name: str, counter: int = 1) -> str:
     name = folder_name.split('/')
     result = f"{name[-1] if len(name) > 1 else folder_name}{folder_symbol}"
 
-    # if folder_items:
-    #     result += folder_not_empty_symbol
-
     for item in folder_items:
 
         item: DirEntry = item
