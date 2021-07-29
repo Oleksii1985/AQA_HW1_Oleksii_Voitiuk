@@ -45,3 +45,7 @@ class SomeCompany:
     def modify_telephone_number(self, new_telephone_number: int) -> None:
         """ Modify company's telephone number otherwise return None"""
         self.__telephone_number = new_telephone_number
+
+    # not bet but no logiic in this class present - 2 points
+    # modify methods just rewrite something but I not sure that someone
+    # outside of company should be able modify something -2 points

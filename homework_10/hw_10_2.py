@@ -54,3 +54,7 @@ class Employee:
     def modify_position(self, new_position: str) -> None:
         """ Modify position of employee otherwise return None"""
         self.__position = new_position
+
+    # not bet but no logic in this class present - 2 points
+    # modify methods just rewrite something but I am not sure that someone
+    # outside from global scope should be able modify something -2 points
