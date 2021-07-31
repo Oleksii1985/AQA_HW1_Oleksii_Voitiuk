@@ -54,3 +54,6 @@ class RallyCar(GasolineSedanCar):
         self.doors = 2
         self.color = "Red"
         super().__init__()
+
+# nice classes but how you understand almost no logic in them)
+# Also try to split classes on modules. Waiting on rework)
