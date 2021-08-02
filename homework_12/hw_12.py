@@ -14,3 +14,8 @@ if __name__ == '__main__':
     print(car.engine_status())
     car.stop_engine()
     print(car.engine_status())
+
+# Not bad but Interface should not contain any implementation __init__ it
+# is method with implementing fields
+# -2 points
+# Want to see more logic in future implementations
