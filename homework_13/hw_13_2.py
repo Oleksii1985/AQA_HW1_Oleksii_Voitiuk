@@ -6,9 +6,14 @@
  хочу видеть список вагонов без локомотива. У каждого вагона должен быть номер. При принте вагона в консоль
  хочу видеть следующее "[n]" где n номер вагона.
 """
-from homework_13.train import Train
-from homework_13.train_car import TrainCar
+from OleksiyVoitov.AQA_HW1_Oleksii_Voitiuk.homework_13.train import Train
+from OleksiyVoitov.AQA_HW1_Oleksii_Voitiuk.homework_13.train_car import \
+    TrainCar
 
 if __name__ == '__main__':
     train = Train()
-    train_car_1 = TrainCar(1)
+    train.add_train_car(TrainCar(1))
+    print(train.train_cars[0])
+    # Actual: This is number of TrainCar: 1
+    # Expected: [1]
+    # -1 point
