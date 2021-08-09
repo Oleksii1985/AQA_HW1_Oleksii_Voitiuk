@@ -1,7 +1,6 @@
 class Action:
-    def __init__(self):
-        self.__name: str = "Jogging"
+    def __init__(self, name: str):
+        self.__name = name
 
-    @property
-    def name_action(self) -> str:
-        return self.__name
+    def __call__(self):
+        print(f"I'm {self.__name}")

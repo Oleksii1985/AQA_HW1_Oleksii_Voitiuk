@@ -4,13 +4,11 @@
 Написать свойство возвращающее действие. Перебрать список людей созданных с помощью класса Human
 и вызвать действие как функцию.
 """
-from action import Action
-from human import Human
+from homework_14.action import Action
+from homework_14.human import Human
 
 if __name__ == '__main__':
-    human = Human("Alex", 36)
-    action = Action()
-    print(human.action.name_action)
-    print(action.name_action)
-    print(human.name_human)
-    print(human.age)
+    action = Action("jogging")
+    human = Human("Alex", 36, action)
+
+    human.action()

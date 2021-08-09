@@ -1,11 +1,11 @@
-from action import Action
+from .action import Action
 
 
 class Human:
-    def __init__(self, name: str, age: int):
+    def __init__(self, name: str, age: int, action: Action):
         self.__name = name
         self.__age = age
-        self.__action: Action = Action()
+        self.__action = action
 
     @property
     def name_human(self) -> str:
