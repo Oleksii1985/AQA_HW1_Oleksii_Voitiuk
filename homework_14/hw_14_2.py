@@ -27,5 +27,6 @@ class CustomIterator:
 if __name__ == '__main__':
     custom_iterator = CustomIterator([1, 2, 3, 4, 5, 6, 7], 3, 6)
     iterator = iter(custom_iterator)
+
     for item in iterator:
         print(item)
