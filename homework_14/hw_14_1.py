@@ -8,7 +8,6 @@ from homework_14.action import Action
 from homework_14.human import Human
 
 if __name__ == '__main__':
-    action = Action("jogging")
-    human = Human("Alex", 36, action)
+    human = Human("Alex", 36, "jogging")
 
     human.action()
