@@ -4,7 +4,6 @@
 Написать свойство возвращающее действие. Перебрать список людей созданных с помощью класса Human
 и вызвать действие как функцию.
 """
-from homework_14.action import Action
 from homework_14.human import Human
 
 if __name__ == '__main__':
