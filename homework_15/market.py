@@ -18,3 +18,7 @@ class Market(Product):
             return Strawberry()
         else:
             raise Exception("Incorrect type of product!")
+
+# make no sence to extend product with market. It is almost same like extend
+# car with building
+# Also no return type in annotation
