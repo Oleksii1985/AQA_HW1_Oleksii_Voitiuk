@@ -16,6 +16,9 @@ def test_human_is_dead(dead_human):
 
 
 def test_human_is_alive(human):
+    # well this step is excessive since return only true or false
+    # but if I will change conditions of fixture it will fail with Exception error
+
     human._Human__is_alive()
 
     assert human._Human__status == "alive"
@@ -33,7 +36,7 @@ def test_human_is_alive_exception(dead_human):
 )
 def test_change_gender(human_without_gender, gender, expected):
     human_without_gender.change_gender(gender)
-
+    # will be better to use monkey patch here
     assert human_without_gender.gender == expected
 
 
